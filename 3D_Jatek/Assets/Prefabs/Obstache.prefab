@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5394722263351042830}
   m_Layer: 0
   m_Name: Obstache
-  m_TagString: Untagged
+  m_TagString: Akadaly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
