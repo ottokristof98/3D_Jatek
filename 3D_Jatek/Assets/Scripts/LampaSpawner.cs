@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class LampaSpawner : MonoBehaviour
 {
-    public GameObject[] akadalyMintak;
+    
+    public GameObject[] lampaMintak;
     private float SpawnKoztiIdo;
     public float kezdesSpawnIdo;
     public float csokkenesIdo;
@@ -18,10 +19,10 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         if(SpawnKoztiIdo <= 0){
-        int rand = Random.Range(0, akadalyMintak.Length);
         
-       
-        Instantiate(akadalyMintak[rand], transform.position, Quaternion.identity);
+        int rand2 = Random.Range(0, lampaMintak.Length);
+        
+        Instantiate(lampaMintak[rand2], transform.position, Quaternion.identity);
         SpawnKoztiIdo = kezdesSpawnIdo;
         if(kezdesSpawnIdo > minIdo)
         {
